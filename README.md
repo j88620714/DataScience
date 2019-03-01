@@ -4,9 +4,8 @@
 
 **2019-02-28-Week1**
 1. HW0:
-* google試算表:https://docs.google.com/spreadsheets/d/1WfNdBVQxdRXXkfSpPQQQuWh3AxMlW-8GbyaeqRF8NRE/edit?usp=sharing  
-1.  有序清單
-2.  無序清單
+>* google試算表:https://docs.google.com/spreadsheets/d/1WfNdBVQxdRXXkfSpPQQQuWh3AxMlW-8GbyaeqRF8NRE/edit?usp=sharing  
+
 
 
 
