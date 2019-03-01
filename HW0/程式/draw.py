@@ -51,7 +51,7 @@ wc.to_image()
 
 #顯示用
 plt.figure( figsize=(100,75), facecolor='k')
-plt.imshow(ten_wc,interpolation='bilinear')
+plt.imshow(wc,interpolation='bilinear')
 plt.axis("off")
 plt.tight_layout(pad=0)
 plt.show()
