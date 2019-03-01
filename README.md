@@ -6,8 +6,8 @@
 1. HW0:
 >* 程式碼:[**Link**](https://github.com/j88620714/DataScience/tree/master/HW0/%E7%A8%8B%E5%BC%8F)
 >* 以試算表作為資料庫:[**Link**](https://docs.google.com/spreadsheets/d/1WfNdBVQxdRXXkfSpPQQQuWh3AxMlW-8GbyaeqRF8NRE/edit?usp=sharing)  
-2. 成果
->* ![以柯文哲為關鍵字](https://github.com/j88620714/DataScience/blob/master/HW0/%E7%85%A7%E7%89%87/%E6%8A%93%E9%A0%ADwordcloud.png)
+>* 以柯文哲為關鍵字:
+> ![以柯文哲為關鍵字](https://github.com/j88620714/DataScience/blob/master/HW0/%E7%85%A7%E7%89%87/%E6%8A%93%E9%A0%ADwordcloud.png)
 
 
 
