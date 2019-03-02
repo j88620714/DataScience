@@ -2,7 +2,7 @@
 姓名:歐陽智文  
 學號:b06502024
 
-## 2019-02-28-Week1
+## 2019-02-28-Week2
 ### HW0:
 1. 試算表作為資料庫 : [**Link**](https://docs.google.com/spreadsheets/d/1WfNdBVQxdRXXkfSpPQQQuWh3AxMlW-8GbyaeqRF8NRE/edit?usp=sharing)  
 2. 流程:          
@@ -23,6 +23,13 @@
 * 爬蟲slideshare:[https://www.slideshare.net/tw_dsconf/python-78691041](https://www.slideshare.net/tw_dsconf/python-78691041)
 * Markdown:[https://kakapontw.blogspot.com/2017/01/markdown-syntax.html#img](https://kakapontw.blogspot.com/2017/01/markdown-syntax.html#img)
 * 助教sample code:[https://github.com/MiccWan/Political-News-Analysis/blob/master/final_demo/final_report.ipynb](https://github.com/MiccWan/Political-News-Analysis/blob/master/final_demo/final_report.ipynb)
+
+##　2019-0３-０７-Week３
+##　2019-0３-１４-Week４
+##　2019-0３-２１-Week５
+##　2019-0３-28-Week６
+
+
 	
 
 
