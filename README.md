@@ -16,6 +16,12 @@
  ![以"柯文哲"為關鍵字](https://github.com/j88620714/DataScience/blob/master/HW0/%E7%85%A7%E7%89%87/%E6%8A%93%E9%A0%ADwordcloud.png)
 	* 以"土包子"為關鍵字:
 ![以"包子"為關鍵字](https://github.com/j88620714/DataScience/blob/master/HW0/%E7%85%A7%E7%89%87/%E5%8C%85%E5%AD%90wordcloud.png)
+
+### 2. 參考資料
+* gspread:[https://github.com/burnash/gspread](https://github.com/burnash/gspread)
+* jieba:[https://github.com/fxsjy/jieba](https://github.com/fxsjy/jieba)
+* 爬蟲slideshare:[https://www.slideshare.net/tw_dsconf/python-78691041](https://www.slideshare.net/tw_dsconf/python-78691041)
+* Markdown:[https://kakapontw.blogspot.com/2017/01/markdown-syntax.html#img](https://kakapontw.blogspot.com/2017/01/markdown-syntax.html#img)
 	
 
 
