@@ -3,7 +3,7 @@
 學號:b06502024
 
 ## 2019-02-28-Week1
-### * HW0:
+### HW0:
 1. 試算表作為資料庫 : [**Link**](https://docs.google.com/spreadsheets/d/1WfNdBVQxdRXXkfSpPQQQuWh3AxMlW-8GbyaeqRF8NRE/edit?usp=sharing)  
 2. 流程:          
 →[**crawler**](https://github.com/j88620714/DataScience/blob/master/HW0/%E7%A8%8B%E5%BC%8F/crawler.py):從自由時報政治新聞列表，將2/22~2/28日間的新聞內容匯入試算表     
@@ -17,7 +17,7 @@
 	* 以"土包子"為關鍵字 :
 ![以"包子"為關鍵字](https://github.com/j88620714/DataScience/blob/master/HW0/%E7%85%A7%E7%89%87/%E5%8C%85%E5%AD%90wordcloud.png)
 
-### * 參考資料
+### 參考資料
 * gspread:[https://github.com/burnash/gspread](https://github.com/burnash/gspread)
 * jieba:[https://github.com/fxsjy/jieba](https://github.com/fxsjy/jieba)
 * 爬蟲slideshare:[https://www.slideshare.net/tw_dsconf/python-78691041](https://www.slideshare.net/tw_dsconf/python-78691041)
