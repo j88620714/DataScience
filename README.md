@@ -24,10 +24,10 @@
 * Markdown:[https://kakapontw.blogspot.com/2017/01/markdown-syntax.html#img](https://kakapontw.blogspot.com/2017/01/markdown-syntax.html#img)
 * 助教sample code:[https://github.com/MiccWan/Political-News-Analysis/blob/master/final_demo/final_report.ipynb](https://github.com/MiccWan/Political-News-Analysis/blob/master/final_demo/final_report.ipynb)
 
-## 2019-0３-０７-Week３
-## 2019-0３-１４-Week４
-## 2019-0３-２１-Week５
-## 2019-0３-28-Week６
+## 2019-03-07-Week３
+## 2019-03-14-Week４
+## 2019-03-21-Week５
+## 2019-03-28-Week６
 
 
 	
