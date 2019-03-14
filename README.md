@@ -25,6 +25,10 @@
 * 助教sample code:[https://github.com/MiccWan/Political-News-Analysis/blob/master/final_demo/final_report.ipynb](https://github.com/MiccWan/Political-News-Analysis/blob/master/final_demo/final_report.ipynb)
 
 ## 2019-03-07-Week３
+### HW1:北市府交通資料整理 : [**Link**](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing)
+### 參考資料
+* 台北市政府資料開放平台道路速率:[https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c](https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c)
+* Parse XML using Google Apps Script:[https://stackoverflow.com/questions/26531907/parse-xml-using-google-apps-script](https://stackoverflow.com/questions/26531907/parse-xml-using-google-apps-script)
 ## 2019-03-14-Week４
 ## 2019-03-21-Week５
 ## 2019-03-28-Week６
