@@ -34,7 +34,8 @@
 ![gif](https://github.com/j88620714/DataScience/blob/master/HW1/%E5%BE%A9%E8%88%88%E5%BE%80%E5%8D%97.gif)
 
 ### 參考資料
-* 台北市政府資料開放平台道路速率:[https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c](https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c)
+* 視覺化資料 - Matplotlib:[https://ithelp.ithome.com.tw/articles/10201004](https://ithelp.ithome.com.tw/articles/10201004)
+* Matplotlib 製作Gif:[https://blog.csdn.net/briblue/article/details/84940997](https://blog.csdn.net/briblue/article/details/84940997)
 
 ## 2019-03-21-Week５
 ## 2019-03-28-Week６
