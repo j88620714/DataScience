@@ -1,1 +1,0 @@
-{"files":[{"id":"a09d5b2c-63c7-4619-93ae-098f272a160f","name":"程式碼","type":"server_js","source":"function myFunction() {\n  \n}\n"},{"id":"a6a31268-2903-4777-8b5e-96246f68d86c","name":"appsscript","type":"json","source":"{\n  \"timeZone\": \"Asia/Hong_Kong\",\n  \"dependencies\": {\n  },\n  \"exceptionLogging\": \"STACKDRIVER\"\n}"}]}
