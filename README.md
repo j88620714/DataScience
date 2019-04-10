@@ -26,8 +26,9 @@
 
 ## 2019-03-07-Week３
 ### HW1:
-* 爬蟲:[**程式碼**](https://script.google.com/d/MoFMifnPZJWSCCY-qUiHSjPRWp2vJfyNW/edit?mid=ACjPJvERJyEGyupYcceMP2zgbi-XBuoeIsc0jfoRDNc5MlD6BwZz1y98hUQGoXpna_Td5fKbbZpZ7mjLOxd_ttiI0JYeVDz0v2bUWugd56YlQ25FS8iYvWkyBGtfK9-uGZXbtfreI9hibGE&uiv=2)
-* 北市府交通資料整理 : [**Link**](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing)
+* [**爬蟲**](https://script.google.com/d/MoFMifnPZJWSCCY-qUiHSjPRWp2vJfyNW/edit?mid=ACjPJvERJyEGyupYcceMP2zgbi-XBuoeIsc0jfoRDNc5MlD6BwZz1y98hUQGoXpna_Td5fKbbZpZ7mjLOxd_ttiI0JYeVDz0v2bUWugd56YlQ25FS8iYvWkyBGtfK9-uGZXbtfreI9hibGE&uiv=2):因為台北市政府開放平台上的資料是每五分鐘更新一次的即時資料，所以必須每五分鐘就爬一次資料，然後把這些資料記錄下來。我們選擇的方式是用google的apps script來達成，因為它可以設定在雲端自動執行，而且爬下來的資料也能很容易地寫入試算表中儲存。
+* [**交通資料整理**](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing):資料爬下來後，我們就直接在試算表中做簡單的統計，像是把平日同樣時段的速度做平均。
+      
     
 ### 參考資料
 * 台北市政府資料開放平台道路速率:[https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c](https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c)
@@ -58,9 +59,9 @@
      ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E6%A8%99%E8%A8%98%E9%A1%AF%E8%91%97%E9%80%9F%E5%BA%A6%E5%B7%AE%E7%95%B0.png)      
      從上圖平均速度搭配T檢定的結果就可以清楚的看到，過了7:10後會有明顯且大幅的降速，13:30後也會有小幅度的降速，到了17:40附近又會有一波降速，而過了19:20後車速則終於開始回升。這樣的結果與交控中心的定義其實蠻符合的，差別大概就在於白天沒有所謂真正"離峰"的時段，因為車速只是隨著時間越來越慢，而"尖峰"則是車速有明顯下降的時段
      這樣的分析我覺得可以運用在號誌秒數週期的調整，根據我每天上學的觀察，號誌的秒數如果有變化幾乎都是在整點的時候，因此如果能透過分析精準的知道什麼時候需要調整周期，我覺得會更有效率。
-* Q1(補充):我們從上面的結果訂出了7:00~22:00為較多人使用道路的時段，並以這個區間做各站點的箱型圖                 
-     [**程式碼**](https://github.com/j88620714/DataScience/blob/master/HW1/Box.ipynb)
-     ![](https://github.com/j88620714/DataScience/blob/master/HW1/box.png)
+* Q1(補充):我們從上面的結果訂出了7:00~22:00為較多人使用道路的時段，並以這個區間做各站點的箱型圖                             
+     [**程式碼**](https://github.com/j88620714/DataScience/blob/master/HW1/Box.ipynb)                  
+     ![](https://github.com/j88620714/DataScience/blob/master/HW1/box.png)                     
 
 ## 2019-04-04-Week6
 ### HW1:EDA
@@ -70,8 +71,7 @@
      ![](https://github.com/j88620714/DataScience/blob/master/HW1/heatmap.png)      
      圖中顏色越深代表速度越慢，我們可以看到如同gif做出來的結果，第三站的速度一直維持在50Km/Hr左右，但其他站與站之間的關聯性似乎還不是很明顯。於是我們接下來以V-t圖來觀察兩觀測站的速度關系。                
      以第一、二站為例:[**程式碼**](https://github.com/j88620714/DataScience/blob/master/HW1/linePlots.ipynb)                        
-     ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E4%B8%80%E3%80%81%E4%BA%8C%E7%AB%99V-t.png)                
-       
+     ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E4%B8%80%E3%80%81%E4%BA%8C%E7%AB%99V-t.png)                   
      我們可以看到，這兩站有明顯的速度差，可能會有類似的趨勢，但因為速差太大不好比較，所以我們決定把蒐集到的速度資料在試算表中直接標準化。接著再做一次標準化後的V-t圖。       
      ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E4%B8%80%E3%80%81%E4%BA%8C%E7%AB%99%E6%A8%99%E6%BA%96%E5%8C%96V-t%E5%9C%96.png)           
      如果單看7:00~22:00的線段，就可以看到它們有高度重疊的趨勢。接著以同樣的方法對四、五站也做一次          
