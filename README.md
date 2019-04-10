@@ -62,7 +62,8 @@
 ### HW1:EDA
 * Q2:兩相鄰站點間是否有關連?
      除了上面做過的gif之外，我們也嘗試做熱圖來看看透過顏色的深淺能不能觀察到其他性質
-
+    [**程式碼**](https://github.com/j88620714/DataScience/blob/master/HW1/%E7%86%B1%E5%9C%96.ipynb)    
+    ![](https://github.com/j88620714/DataScience/blob/master/HW1/heatmap.png)
 
 	
 
