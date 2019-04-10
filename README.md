@@ -69,11 +69,11 @@
      ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E4%B8%80%E3%80%81%E4%BA%8C%E7%AB%99V-t.png)                
        
      我們可以看到，這兩站有明顯的速度差，可能會有類似的趨勢，但因為速差太大不好比較，所以我們決定把蒐集到的速度資料在試算表中直接標準化。接著再做一次標準化後的V-t圖。       
-     ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E4%B8%80%E3%80%81%E4%BA%8C%E7%AB%99%E6%A8%99%E6%BA%96%E5%8C%96V-t%E5%9C%96.png) 
+     ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E4%B8%80%E3%80%81%E4%BA%8C%E7%AB%99%E6%A8%99%E6%BA%96%E5%8C%96V-t%E5%9C%96.png)           
      如果單看7:00~22:00的線段，可以看到它們有高度重疊的趨勢。接著以同樣的方法對四、五站也做一次          
      ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E5%9B%9B%E3%80%81%E4%BA%94%E7%AB%99V-t.png)
-     ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E5%9B%9B%E3%80%81%E4%BA%94%E7%AB%99%E6%A8%99%E6%BA%96%E5%8C%96V-t%E5%9C%96.png) 
-     
+     ![](https://github.com/j88620714/DataScience/blob/master/HW1/%E5%9B%9B%E3%80%81%E4%BA%94%E7%AB%99%E6%A8%99%E6%BA%96%E5%8C%96V-t%E5%9C%96.png)       
+     分析完上面幾站後，我們大概可以得出幾個結論。1.一、二站的車流應該有類似的性質，但可能因為道路性質的不同(車道、紅綠燈數目)，導致車子到了第二觀察站的路段時降低速度。2.第三站車速始終保持定值3.五、六站的各項性質都很接近
     
     
 
