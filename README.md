@@ -63,7 +63,9 @@
 * Q2:兩相鄰站點間是否有關連?
      除了上面做過的gif之外，我們也嘗試做熱圖來看看透過顏色的深淺能不能觀察到其他性質
     [**程式碼**](https://github.com/j88620714/DataScience/blob/master/HW1/%E7%86%B1%E5%9C%96.ipynb)    
-    ![](https://github.com/j88620714/DataScience/blob/master/HW1/heatmap.png)
+    ![](https://github.com/j88620714/DataScience/blob/master/HW1/heatmap.png)      
+圖中顏色越深代表速度越慢，我們可以看到如同gif做出來的結果，第三站的速度一直維持在50Km/Hr左右，但其他站與站之間的關聯性似乎還不是很明顯。於是我們接下來以V-t圖來觀察兩觀測站的速度關系。
+      以第一、二站為例:
 
 	
 
