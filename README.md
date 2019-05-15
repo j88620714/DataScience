@@ -84,7 +84,7 @@
      至於以上現象發生的可能原因，我們會在接下來的時間繼續討論
     
 ## 2019-05-02-Week13
-### HW4~6:PCA
+### HW4~6:
 * [**練習**](https://github.com/j88620714/DataScience/blob/master/HW4-6/practice.ipynb):這次的作業比較偏向文字處理，而我們先前的資料都以數值居多，因此我們到台北市開放平台上找到了[**107年度A1及A2類交通事故明細**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=154609684)來做為我們的文本，並試圖分析事故間的關聯性。
   1. 首先先對資料做預處裡，我們將資料表中的代碼先全部換回文字([**對照表**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1255796576))，例如:A1代表造成人員當場或二十四小時內死亡之交通事故、C03代表普通重型機車等。  
   2. 接著，我們把[**資料**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1061450930)分成兩個類別，分別為A1(死亡)、A2(受傷)。然後皆使用jeiba來斷詞，分別計算兩類別的詞頻，並各取出現頻率最高的前20個詞。(直接用jieba而不使用TF-IDF是因為我們的原始資料中每一格都是有意義的資料，不像一般的文本有會有大量的贅詞)
