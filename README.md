@@ -85,9 +85,9 @@
     
 ## 2019-05-02-Week13
 ### HW4~6:PCA
-* [**練習**](https://github.com/j88620714/DataScience/blob/master/HW4-6/practice.ipynb):這次的作業比較偏向文字處理，而我們先前的資料都以數值居多，因此我們到台北市開放平台上找到了[107年度A1及A2類交通事故明細](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=154609684)來做為我們的文本，並試圖分析事故間的關聯性。
+* [**練習**](https://github.com/j88620714/DataScience/blob/master/HW4-6/practice.ipynb):這次的作業比較偏向文字處理，而我們先前的資料都以數值居多，因此我們到台北市開放平台上找到了[**107年度A1及A2類交通事故明細**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=154609684)來做為我們的文本，並試圖分析事故間的關聯性。
   1. 首先先對資料做預處裡，我們將資料表中的代碼先全部換回文字([**對照表**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1255796576))，例如:A1代表造成人員當場或二十四小時內死亡之交通事故、C03代表普通重型機車等。  
-  2. 接著，我們把[資料](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1061450930)分成兩個類別，分別為A1(死亡)、A2(受傷)。然後皆使用jeiba來斷詞，分別計算兩類別的詞頻，並各取出現頻率最高的前20個詞。(直接用jieba而不使用TF-IDF是因為我們的原始資料中每一格都是有意義的資料，不像一般的文本有會有大量的贅詞)
+  2. 接著，我們把[**資料**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1061450930)分成兩個類別，分別為A1(死亡)、A2(受傷)。然後皆使用jeiba來斷詞，分別計算兩類別的詞頻，並各取出現頻率最高的前20個詞。(直接用jieba而不使用TF-IDF是因為我們的原始資料中每一格都是有意義的資料，不像一般的文本有會有大量的贅詞)
   3. 仿照老師對兩種類別fb粉專的分析，把前一步驟得到關鍵詞對每一項事故紀錄做共現矩陣(有出現則true反之則false)，最後從networkx跑出的圖上可以看出，有產生關連性的很大一部分都是同一場車禍，但是是對不同人所做的紀錄(一場車禍如果是4台車相撞，在明細中就會有4筆紀錄)。
 * [**PCA**](https://github.com/j88620714/DataScience/blob/master/HW4-6/PCA2.ipynb):上面得出結論是蠻合理的，但是僅有這樣的關聯性似乎沒有太大意義。所以我們重新選擇了A1類的死亡車禍，希望能從共現性來看出有沒有什麼樣的特徵跟死亡車禍比較相關。比方說能以"死亡車禍"這個標籤為中心，根據相關程度向外發散到其他標籤。
   1. 如同上面的文字預處理，不同的是這次我們先在試算表中，把同一場車禍的所有資料合併成一個文本形成新的[**資料**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)，否則如果像是摩托車與汽車相撞，不合併的話就不會有摩托車-汽車的共現性了。除此之外，為了避免年齡及車道速限中的數字跟路名中的數字混淆，所以一律換成以中文表示。
