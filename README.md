@@ -86,11 +86,11 @@
 ## 2019-05-02-Week13
 ### HW4~6:PCA
 * [**練習**](https://github.com/j88620714/DataScience/blob/master/HW4-6/practice.ipynb):這次的作業比較偏向文字處理，而我們先前的資料都以數值居多，因此我們到台北市開放平台上找到了[107年度A1及A2類交通事故明細](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=154609684)來做為我們的文本，並試圖分析事故間的關聯性。
-  1. 首先先對資料做預處裡，我們將資料表中的代碼先全部換回文字([對照表](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1255796576))，例如:A1代表造成人員當場或二十四小時內死亡之交通事故、C03代表普通重型機車等。  
+  1. 首先先對資料做預處裡，我們將資料表中的代碼先全部換回文字([**對照表**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1255796576))，例如:A1代表造成人員當場或二十四小時內死亡之交通事故、C03代表普通重型機車等。  
   2. 接著，我們把[資料](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1061450930)分成兩個類別，分別為A1(死亡)、A2(受傷)。然後皆使用jeiba來斷詞，分別計算兩類別的詞頻，並各取出現頻率最高的前20個詞。(直接用jieba而不使用TF-IDF是因為我們的原始資料中每一格都是有意義的資料，不像一般的文本有會有大量的贅詞)
   3. 仿照老師對兩種類別fb粉專的分析，把前一步驟得到關鍵詞對每一項事故紀錄做共現矩陣(有出現則true反之則false)，最後從networkx跑出的圖上可以看出，有產生關連性的很大一部分都是同一場車禍，但是是對不同人所做的紀錄(一場車禍如果是4台車相撞，在明細中就會有4筆紀錄)。
 * [**PCA**](https://github.com/j88620714/DataScience/blob/master/HW4-6/PCA2.ipynb):上面得出結論是蠻合理的，但是僅有這樣的關聯性似乎沒有太大意義。所以我們重新選擇了A1類的死亡車禍，希望能從共現性來看出有沒有什麼樣的特徵跟死亡車禍比較相關。比方說能以"死亡車禍"這個標籤為中心，根據相關程度向外發散到其他標籤。
-  1. 如同上面的文字預處理，不同的是這次我們先在試算表中，把同一場車禍的所有資料合併成一個文本形成新的[資料](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)，否則如果像是摩托車與汽車相撞，不合併的話就不會有摩托車-汽車的共現性了。除此之外，為了避免年齡及車道速限中的數字跟路名中的數字混淆，所以一律換成以中文表示。
+  1. 如同上面的文字預處理，不同的是這次我們先在試算表中，把同一場車禍的所有資料合併成一個文本形成新的[**資料**](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)，否則如果像是摩托車與汽車相撞，不合併的話就不會有摩托車-汽車的共現性了。除此之外，為了避免年齡及車道速限中的數字跟路名中的數字混淆，所以一律換成以中文表示。
   2. 接著，我們把對照表中的標籤作為我們的關鍵詞，然後計算兩兩關鍵詞在所有車禍紀錄同時出現的次數做出共現矩陣。
   3. 在跑networkx的圖時，我們改變了權重、線段粗細和節點大小，如此一來共現性高的兩個標籤就會距離較近且線斷較粗，總出現次數大的則會讓標籤放大。   
   ![](https://github.com/j88620714/DataScience/blob/master/HW4-6/%E5%85%B1%E7%8F%BE%E5%9C%96.png)     
@@ -101,9 +101,9 @@
   * 年輕族群(20至30歲)較其他年齡層易發生車禍，而總體而言男性比例又高於女性。
   * 快車道較慢車道與死亡更相關，時速50的道路也較易發生死亡車禍，可知高速行駛提高意外風險之外，也更易在事故發生時造成巨大傷害。
 * [**Neural Network**](https://github.com/j88620714/DataScience/blob/master/HW4-6/NeuralNetwork.ipynb):先前的作業中，已經爬了幾條路的車速資料，在爬下了車流量的資料後我們就開使思考，有沒有可能像流體力學中，用一個間單的模型透過帶入密度、壓力、溫度等來計算空間中某一點某一個時刻的流速，改變為輸入車流、道路性質(紅綠燈數、車道數...等)來預測車速。剛好老師教到了Neural Network，所以我們就決定把蒐集到的數萬筆資料丟進Keras中訓練，看看能不能真的預測車速。
-  1. 首先還是資料預處理的部分，因為車流車速兩筆資料是分別爬的，所以必須篩選同時有車流與車速資料的時刻，並將該時刻的資料抓取下來依照站點再與實地走訪後的道的道路資料整理成3個變數的X輸入、對應的車速整理成1項Y輸出。[code](https://script.google.com/d/1uNK7is3reReGsmvhh-zyPPKZXEQzlzOwPqbY2FEuSH4gBnKUuYxVBp5x/edit?usp=sharing)
+  1. 首先還是資料預處理的部分，因為車流車速兩筆資料是分別爬的，所以必須篩選同時有車流與車速資料的時刻，並將該時刻的資料抓取下來依照站點再與實地走訪後的道的道路資料整理成3個變數的X輸入、對應的車速整理成1項Y輸出。[**code**](https://script.google.com/d/1uNK7is3reReGsmvhh-zyPPKZXEQzlzOwPqbY2FEuSH4gBnKUuYxVBp5x/edit?usp=sharing)
   2. 目前的三個Xdata是車流、路口能否左轉以及車道數，Ydata是車速。其中比較特別的是路口能否左轉，選擇這項當作輸入變數是因為根據我平常上學騎車的經驗，如果這個路口能左轉會造成在內線道有車字排隊等左轉，這時外線道也會因為有車在等待右轉，如此一來就只剩下中間車道可以勉強通行了，所以通常會特別塞。
-  3. 把整理完的[資料](https://docs.google.com/spreadsheets/d/1abC0kNTX9YRXDCMU-v9c9aYlXSGakNKbVcIR9t-YgH0/edit#gid=0)分別存成xtrain.csv、ytrain.csv就可以丟進keras開始運算了。  
+  3. 把整理完的[**資料**](https://docs.google.com/spreadsheets/d/1abC0kNTX9YRXDCMU-v9c9aYlXSGakNKbVcIR9t-YgH0/edit#gid=0)分別存成xtrain.csv、ytrain.csv就可以丟進keras開始運算了。  
     
   結論:透果跑出來的模型去預測33筆車速，再去對照真正觀測到的車速，我們發現有30筆的誤差是在10%以內。接下來我們會繼續蒐集數據，也許還會新增Xdata的變數，希望能得到更精準的預測。我想這套預測模型應該會蠻適合用在像是針對目前經常壅塞的道路，政府可以拿來評估改變什麼道路性質可以最有效率的提升車速，或者是需要臨時封閉道路時，可以預測對車速的影響，如果有必要分流到其他道路的話，也可以分析在不嚴重影響那條道路的車速情況下，可以負擔分流多少車過去。
 
